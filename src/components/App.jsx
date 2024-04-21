@@ -1,23 +1,11 @@
-// src/App.jsx
-// src/components/App.jsx
-// import clsx from "clsx";
-import Product from "./Product";
+
+
+
 
 export default function App() {
-  return (
-    <div>
-      <h1>Best selling</h1>
-
-      <Product
-        name="Tacos With Lime"
-        imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
-        price={10.99}
-      />
-      <Product
-        name="Fries and Burger"
-        imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
-        price={14.29}
-      />
-    </div>
-  );
+  return <div><h1>App</h1>
+  <img src={url} alt="" width="480" />
+  </div>;
 }
+
+const url = 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg';
