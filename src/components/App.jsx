@@ -1,11 +1,13 @@
-
+import userData from '../userData.json'
+import Profile from "./Profile/Profile";
 
 
 
 export default function App() {
-  return <div><h1>App</h1>
-  <img src={url} alt="" width="480" />
-  </div>;
+  return (
+    <>
+      <Profile name={userData.username} tag={userData.tag} location={userData.location} image={userData.avatar} stats={userData.stats}/>
+    </>
+  )
 }
 
-const url = 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg';
