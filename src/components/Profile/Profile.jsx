@@ -1,32 +1,32 @@
-
-// import userData from '../userData.json'
+import css from './Profile.module.css'
 
 export default function Profile({name, tag, location, image, stats : {followers, views, likes}}) {
   
-  return (<div>
+  return (<div className={css.card}>
 <div>
-    <img
+    <img className={css.img}
         src={image}
         width={100}
         alt="User avatar"
         
     />
-    <p>{name}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
+    <p className={css.title}>{name}</p>
+      <p className={css.text}>@{tag}</p>
+      <p className={css.text}>{location}</p>
     </div>
-    <ul>
-    <li>
-      <span>Followers</span>
-        <span>{followers}</span>
+
+    <ul className={css.list}>
+    <li className={css.listItem}>
+      <span className={css.stat}>Followers</span>
+        <span className={css.statValue}>{followers}</span>
     </li>
-    <li>
-      <span>Views</span>
-        <span>{views}</span>
+    <li className={css.listItem}>
+      <span className={css.stat}>Views</span>
+        <span className={css.statValue}>{views}</span>
     </li>
-    <li>
-      <span>Likes</span>
-        <span>{likes}</span>
+    <li className={css.listItem}>
+      <span className={css.stat}>Likes</span>
+        <span className={css.statValue}>{likes}</span>
     </li>
   </ul>
 </div>)

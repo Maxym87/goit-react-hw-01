@@ -1,7 +1,6 @@
 import css from './FriendList.module.css'
 import FriendListItem from './FriendListItem/FriendListItem'
 
-console.log(css)
 export default function FriendsList({ friends }) {
   return (<ul className={css.list}>
     {friends.map((item) => (<li className={css.item} key={item.id}>
